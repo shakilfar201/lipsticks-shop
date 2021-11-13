@@ -58,7 +58,7 @@ const Product = (props) => {
                             {price}
                         </Typography>
                     </CardContent>
-                    <Button onBlur={()=>handleUrl(_id)} variant="contained">Order Now</Button>
+                    <Button onClick={()=>handleUrl(_id)} variant="contained">Order Now</Button>
                     <CardActions disableSpacing>
                         <IconButton aria-label="add to favorites">
                             <FavoriteIcon />
