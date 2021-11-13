@@ -14,7 +14,7 @@ const ManageOrder = () => {
     const [deleteSuccess, setDeleteSuccess] = useState(false);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://mysterious-cove-34253.herokuapp.com/products')
         .then(res=> res.json())
         .then(data=> {
             setAllProduct(data)
@@ -25,7 +25,7 @@ const ManageOrder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are You sure Admin, You Want to Delete this product?")
         if (proceed) {
-            fetch(`http://localhost:5000/products/${id}`, {
+            fetch(`https://mysterious-cove-34253.herokuapp.com/products/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

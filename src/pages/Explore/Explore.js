@@ -8,7 +8,7 @@ const Explore = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(()=>{
-        const url = "http://localhost:5000/products";
+        const url = "https://mysterious-cove-34253.herokuapp.com/products";
         fetch(url)
         .then(res=> res.json())
         .then(data=> {

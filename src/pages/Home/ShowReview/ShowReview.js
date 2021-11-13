@@ -8,7 +8,7 @@ const ShowReview = () => {
     const [chatchReview, setChatchReview] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://mysterious-cove-34253.herokuapp.com/review')
             .then(res => res.json())
             .then(data => {
                 setChatchReview(data)

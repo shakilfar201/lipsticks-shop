@@ -21,7 +21,7 @@ const PlaceOrder = () => {
     const [order, setOrder] = useState(initialize)
 
     useEffect(() => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://mysterious-cove-34253.herokuapp.com/products/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -47,7 +47,7 @@ const PlaceOrder = () => {
             productID: single._id,
         }
         // console.log(orderBook)
-        fetch('http://localhost:5000/booking',{
+        fetch('https://mysterious-cove-34253.herokuapp.com/booking',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'

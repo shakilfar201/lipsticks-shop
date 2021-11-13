@@ -16,7 +16,7 @@ const ManageOrder = () => {
     const [orderConfirm, setOrderConfirm] = useState(false)
 
     useEffect(()=>{
-        fetch('http://localhost:5000/booking/:id')
+        fetch('https://mysterious-cove-34253.herokuapp.com/booking/:id')
         .then(res=> res.json())
         .then(data=> {
             setAllOrder(data)
@@ -30,7 +30,7 @@ const ManageOrder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are You sure Admin, You Want to Delete user Order?")
         if (proceed) {
-            fetch(`http://localhost:5000/booking/${id}`, {
+            fetch(`https://mysterious-cove-34253.herokuapp.com/booking/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())
