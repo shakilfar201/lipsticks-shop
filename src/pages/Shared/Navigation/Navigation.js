@@ -33,7 +33,7 @@ const Navigation = () => {
 
                     <NavLink style={{textDecoration: "none", color: '#FFF'}} to="/home"> <Button color="inherit">Home</Button> </NavLink>
                     {
-                        user?.email ? <Button onBlur={()=>logOut(location,history)} color="inherit" sx={{textDecoration: 'none', color: '#fff'}}>Logout</Button>
+                        user?.email ? <Button onClick={()=>logOut(location,history)} color="inherit" sx={{textDecoration: 'none', color: '#fff'}}>Logout</Button>
                         
                         :
 
