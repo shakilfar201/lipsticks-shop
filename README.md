@@ -1,6 +1,18 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ [Live Lipsticks Shop](https://lipsticks-9fba1.web.app/home).
+ 
+ ## what you can do
+ You can buy product in our website all over the world
+ 
+ ## Option
+ you have many option and fixtuer.you can buy product,,delteted your order,,etc
+ 
+ ## Admin fixtuers
+ admin fixture are also avaiable..if you are a admin you have to right add product,,deleted customer oder,make admin and etc
+ 
+ ## Our service
+ Our business is only niche products,,our many business are comming soon.our payment method are aldo coomig soon
 
 ## Available Scripts
 
